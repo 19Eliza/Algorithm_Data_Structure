@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/stack.dir/stack.cpp.o -c /home/elizaveta/Project/Algorithm_Data_Structure/Prog1/stack.cpp",
+  "file": "/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/stack.cpp",
+  "output": "CMakeFiles/stack.dir/stack.cpp.o"
+},
+{
+  "directory": "/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/stack.dir/stack_class.cpp.o -c /home/elizaveta/Project/Algorithm_Data_Structure/Prog1/stack_class.cpp",
+  "file": "/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/stack_class.cpp",
+  "output": "CMakeFiles/stack.dir/stack_class.cpp.o"
+}
+]

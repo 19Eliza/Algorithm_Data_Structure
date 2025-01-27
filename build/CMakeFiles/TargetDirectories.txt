@@ -1,0 +1,3 @@
+/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/build/CMakeFiles/stack.dir
+/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/build/CMakeFiles/edit_cache.dir
+/home/elizaveta/Project/Algorithm_Data_Structure/Prog1/build/CMakeFiles/rebuild_cache.dir
