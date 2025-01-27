@@ -2,14 +2,15 @@
 #include<vector>
 #include <iterator> 
 
-template<class T>
+using T=double;
+
 class Stack{
     private:
-    vector<T> data;
-    vector<T>::iterator top;
+    std::vector<T> data;
+    std::vector<T>::iterator top;
     public:
-    Stack(){
-        top=nullptr;
-    }
-
+    void push(const T&);
+    void pop();
+    T get_top() const;
+    bool empty() const;
 };
