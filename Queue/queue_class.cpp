@@ -47,5 +47,5 @@ Queue::~Queue(){
         front=front->next;
         delete temp;
     }
-    std::cout<<"Queue deleted.";
+    std::cout<<"Queue deleted.\n";
 }
