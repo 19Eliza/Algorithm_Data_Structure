@@ -21,10 +21,10 @@ namespace convex_hull{
 
     bool Left_Rotation(Point p1, Point p2, Point p3) {
 
-        int u_x = p2.getX() - p1.getX();
-        int u_y = p2.getY() - p1.getY();
-        int v_x = p3.getX() - p2.getX();
-        int v_y = p3.getX() - p3.getX();
+        double u_x = p2.getX() - p1.getX();
+        double u_y = p2.getY() - p1.getY();
+        double v_x = p3.getX() - p2.getX();
+        double v_y = p3.getX() - p3.getX();
 
         if (u_x * v_y - u_y * v_x >= 0) {
             return true;
