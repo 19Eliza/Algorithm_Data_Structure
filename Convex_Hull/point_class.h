@@ -23,6 +23,7 @@ class Point{
     double module()const;
 
     friend double distance(const Point&,const Point&);
+    
     friend std::ostream& operator<<(std::ostream& os,const Point&);
     friend std::istream& operator>>(std::istream& is,Point&);
 };
