@@ -6,16 +6,19 @@
 
 class Point{
     private:
-    double X;
-    double Y;
+    double x;
+    double y;
     public:
     Point();
     Point(double,double);
     Point(const Point&);
     Point& operator=(const Point&);
 
-    double x()const;
-    double y()const;
+    double getX()const;
+    double getY()const;
+
+    bool setX(const double& x1);
+    bool setY(const double& y1);
 
     double module()const;
 
