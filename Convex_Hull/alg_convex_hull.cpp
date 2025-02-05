@@ -16,7 +16,6 @@ namespace convex_hull{
         if (p1.getX() == p2.getX() && p1.getY() > p2.getY()) {
             return false;
         }
-
     }
 
     bool Left_Rotation(Point p1, Point p2, Point p3) {
