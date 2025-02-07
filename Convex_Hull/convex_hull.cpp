@@ -25,10 +25,10 @@ int main()
     std::cout << Point::How_many() << std::endl;
 
     std::vector<Point> p;
-    p.push_back(p1);
-    p.push_back(p2);
-    p.push_back(p3);
-    p.push_back(p4);
+    p.emplace_back(p1);
+    p.emplace_back(p2);
+    p.emplace_back(p3);
+    p.emplace_back(p4);
 
     std::cout << Point::How_many() << std::endl;
 

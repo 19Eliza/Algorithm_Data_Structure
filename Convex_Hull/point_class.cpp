@@ -24,6 +24,7 @@
     };
 
     Point& Point::operator=(const Point& p){
+        if (this==&p) return *this;
         x=p.x;
         y=p.y;
         return *this;
@@ -52,7 +53,7 @@
     };
 
     Point::~Point(){
-        --count_points;
+        if(count_points>0)--count_points;
     }
 
     double distance(const Point& p1,const Point& p2){
