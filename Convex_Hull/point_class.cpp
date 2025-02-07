@@ -1,17 +1,26 @@
 #include"point_class.h"
 
+    int Point::count_points=0;
+
+    int Point::How_many(){
+        return count_points;
+    }
+
     Point::Point(){
         x=y=0.0;
+        ++count_points;
     };
 
     Point::Point(double x1,double y1){
         x=x1;
         y=y1;
+        ++count_points;
     };
     
     Point::Point(const Point& p){
         x=p.x;
         y=p.y;
+        ++count_points;
     };
 
     Point& Point::operator=(const Point& p){
@@ -42,6 +51,10 @@
         return sqrt(x*x+y*y);
     };
 
+    Point::~Point(){
+        --count_points;
+    }
+
     double distance(const Point& p1,const Point& p2){
         return sqrt((p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y));
     };
@@ -55,3 +68,4 @@
         is>>p.x>>p.y;
         return is;
     };
+

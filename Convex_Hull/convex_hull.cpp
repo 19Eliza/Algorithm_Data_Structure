@@ -30,6 +30,10 @@ int main(){
     auto CH=Convex_Hull(p);
     std::cout<<"Convex Hull:\n";
     for(auto elem:CH)std::cout<<elem;
+
+    std::cout<<"Count points "<<Point::How_many()<<std::endl;
+    p1.~Point();
+    std::cout<<"Count points "<<Point::How_many()<<std::endl;
     
     return 0;
 }
