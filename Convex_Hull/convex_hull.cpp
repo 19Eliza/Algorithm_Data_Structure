@@ -23,7 +23,6 @@ int main()
     std::cout << "p4:" << p4;
 
     std::cout << Point::How_many() << std::endl;
-
     std::vector<Point> p;
     p.emplace_back(p1);
     p.emplace_back(p2);
