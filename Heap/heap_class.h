@@ -29,4 +29,6 @@ class Heap{
     Node Find_Min() const;
     bool Extract_Min();
 
+    void show()const;
+
 };
