@@ -14,7 +14,7 @@ class Graph{
     Graph(const Graph& gr);
 
     int CountVertex()const;
-    void AddEdge(int u, int v);
+    bool AddEdge(int u, int v);
 
     std::vector<int>& operator[](int v);
     

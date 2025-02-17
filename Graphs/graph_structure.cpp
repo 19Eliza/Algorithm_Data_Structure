@@ -62,6 +62,16 @@ int Graph::CountVertex()const{
     return N;
 }
 
+bool Graph::AddEdge(int u,int v){
+    if (u < 1 || v < 1 ) {
+        std::cout << "Invalid vertex number. Must be more than 1.\n";
+        return false;
+    }
+    grph[u-1].push_back(v-1);
+    grph[v-1].push_back(u-1);
+    return true;
+}
+
 std::vector<int>& Graph::operator[](int v){
     return grph[v-1];
 }
