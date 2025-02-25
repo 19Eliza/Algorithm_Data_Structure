@@ -7,13 +7,13 @@
 namespace IntervalPlanning{
 
     struct Request{
-        double si;
-        double fi;
+        double si;//begin of request
+        double fi;//end of request
     };
 
     bool cmp(Request& r1,Request& r2);
 
-    std::vector<Request> GreedyAlgorithm(std::vector<Request>& R);
+    std::vector<Request> GreedyAlgorithm(std::vector<Request>& R);//R-set of request
 
     void ShowRequest(std::vector<Request> R);
 }
