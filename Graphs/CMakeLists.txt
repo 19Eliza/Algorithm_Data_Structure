@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.22)
-project(bfs)
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_FLAGS_DEBUG "-g")
-file(GLOB PROJECT_SRC "*.h" "*.cpp")
-add_executable(${CMAKE_PROJECT_NAME} ${PROJECT_SRC})

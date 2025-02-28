@@ -1,4 +1,4 @@
-#include"heap_class.h"
+#include"HeapClass.h"
 
 int main(){
     Heap hp;
@@ -9,9 +9,11 @@ int main(){
     hp.Insert(Node {3,4});
 
     std::cout<<hp.Length()<<std::endl;
-    hp.show();
-    std::cout<<hp.Find_Min().key<<std::endl;
-    hp.Extract_Min();
-    hp.show();
+    hp.ShowHeap();
+    hp.ShowPosition();
+    std::cout<<hp.FindMin().key<<std::endl;
+    hp.ExtractMin();
+    hp.ShowHeap();
+    hp.ShowPosition();
     return 0;
 }
