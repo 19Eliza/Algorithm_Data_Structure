@@ -1,7 +1,6 @@
 #pragma once
 
-#include<iostream>
-#include"HeapClass.h"
+#include "HeapClass.h"
+#include <iostream>
 
-class PriorityQueue:public Heap{
-};
+class PriorityQueue : public Heap {};

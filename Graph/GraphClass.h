@@ -1,22 +1,23 @@
 #pragma once
 
-#include<iostream>
-#include<list>
-#include<vector>
+#include <iostream>
+#include <list>
+#include <vector>
 
-class Graph{
-    private:
-    int N;
-    std::vector<std::vector<std::pair<int,int>>> grph;
-    public:
-    //Graph();
-    Graph(int n);
-    Graph(const Graph& gr);
+class Graph {
+private:
+  int N;
+  std::vector<std::vector<std::pair<int, int>>> grph;
 
-    int CountVertex()const;
-    bool AddEdge(int u, int v,int weight);
+public:
+  // Graph();
+  Graph(int n);
+  Graph(const Graph &gr);
 
-    std::vector<std::pair<int,int>>& operator[](int v);
-    
-    void ShowGraph()const;
+  int CountVertex() const;
+  bool AddEdge(int u, int v, int weight);
+
+  std::vector<std::pair<int, int>> &operator[](int v);
+
+  void ShowGraph() const;
 };

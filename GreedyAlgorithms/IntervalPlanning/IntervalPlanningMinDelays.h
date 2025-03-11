@@ -1,19 +1,21 @@
 #pragma once
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include"IntervalPlanning.h"
+#include "IntervalPlanning.h"
+#include <algorithm>
+#include <iostream>
+#include <vector>
 
-namespace IntervalPlanningMinDelays{
-    struct Request{
-        double di;//deadline time
-        double ti;//duration of the application
-    };
+namespace IntervalPlanningMinDelays {
+struct Request {
+  double di; // deadline time
+  double ti; // duration of the application
+};
 
-    bool cmp(Request& r1,Request& r2);
+bool cmp(Request &r1, Request &r2);
 
-    std::vector<IntervalPlanning::Request> GreedyAlgorithm(std::vector<Request>& R,double s); // R-set of request, s-begin time for all request
+std::vector<IntervalPlanning::Request>
+GreedyAlgorithm(std::vector<Request> &R,
+                double s); // R-set of request, s-begin time for all request
 
-    void ShowRequest(std::vector<Request> R);
-}
+void ShowRequest(std::vector<Request> R);
+} // namespace IntervalPlanningMinDelays

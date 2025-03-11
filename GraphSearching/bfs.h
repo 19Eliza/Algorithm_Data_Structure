@@ -1,8 +1,8 @@
 #pragma once
 
-#include<iostream>
-#include"graph_structure.h"
+#include "graph_structure.h"
+#include <iostream>
 
-namespace bfs{
-    std::vector<bool> Breadth_First_Search(Graph& graph,int s);
+namespace bfs {
+std::vector<bool> Breadth_First_Search(Graph &graph, int s);
 }
