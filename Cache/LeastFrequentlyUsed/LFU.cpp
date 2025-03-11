@@ -1,7 +1,9 @@
 #include "LFU.h"
 
+
 LFUCache::LFUCache(int capacity)
     : cache(), capacity_(capacity), min_freq_(0){};
+
 
 int LFUCache::get(int key) {
 
@@ -67,6 +69,7 @@ void LFUCache::put(int key, int value) {
       freq_keys[min_freq_].pop_front();
 
       key_iter_list.erase(key_last);
+
     }
 
     cache.insert({key, value});
