@@ -1,0 +1,17 @@
+{
+"version": 6,
+"cmakeMinimumRequired": {
+"major": 3,
+"minor": 22,
+"patch": 0
+},
+"include": [],
+"configurePresets": [],
+"buildPresets": [],
+"testPresets": [],
+"packagePresets": [],
+"workflowPresets": [],
+"vendor": {
+"data": "IDE-specific information"
+}
+}
