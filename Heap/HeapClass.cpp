@@ -50,6 +50,13 @@ bool Heap::HeapifyDown(std::size_t i) {
   return true;
 }
 
+
+void Heap::BuildMaxHeap(std::vector<double>& A){
+  std::size_t heapSize=A.size();
+  
+  for(std::size_t i=heapSize/2+1;i>0;--i) 
+}
+
 void Heap::Position() {
   auto n = Length();
   for (std::size_t i = 0; i < n; i++) {

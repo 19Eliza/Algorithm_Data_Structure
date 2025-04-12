@@ -30,6 +30,8 @@ public:
   bool HeapifyUp(std::size_t i);
   bool HeapifyDown(std::size_t i);
 
+  void BuildMaxHeap(std::vector<double>& A);
+
   void Position();
 
   bool Insert(const Node &elem);
