@@ -87,4 +87,33 @@ std::pair<int,std::set<int>> KnapsackProblemWithObjects(const std::vector<int> &
 }
 
 
+double WeightedIntervalScheduling(std::vector<Request> r){
+
+  std::size_t n=r.size();
+
+  sort(r.begin(),r.end(),[](Request& r1,Request& r2){return r1.fi<r2.fi;});
+
+  std::vector<std::size_t> p(n,0);
+
+  for(int i=1;i<n;++i){
+    for(int j=i-1;j>=0;--j){
+      if(r[j].fi<=r[i].fi){
+        p[i]=j;
+        break;
+      }
+    }
+  }
+  
+
+  std::vector<double> M(n+1);
+
+  M[0]=0;
+
+  for(int i=1;i<=n;++i){
+    M[i]=std::max(r[i].weight+M[p[i]],M[p[i-1]]);
+  }
+
+  return M[n];
+}
+
 } // namespace dynamicProgramming
